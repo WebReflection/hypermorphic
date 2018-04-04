@@ -1,7 +1,7 @@
 {
   "name": "hypermorphic",
   "version": "0.0.0",
-  "description": "hyperHTML / viperHTML isomorphic importer",
+  "description": "An isomorphic hyperHTML & viperHTML importer, compatible with bundlers",
   "main": "index.js",
   "scripts": {
     "test": "node -e 'console.assert(typeof require(\"./\").bind === typeof Function)'"
