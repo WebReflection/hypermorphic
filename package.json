@@ -18,5 +18,14 @@
   "dependencies": {
     "hyperhtml": "^2.7.0",
     "viperhtml": "^2.10.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/hypermorphic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/hypermorphic/issues"
+  },
+  "homepage": "https://github.com/WebReflection/hypermorphic#readme"
 }
