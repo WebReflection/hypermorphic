@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "devDependencies": {
+    "hypermorphic": "^0.1.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.13"
+  },
+  "scripts": {
+    "bundle": "webpack",
+    "start": "node server/index.js"
+  }
+}
