@@ -1,0 +1,22 @@
+{
+  "name": "hypermorphic",
+  "version": "0.0.0",
+  "description": "hyperHTML / viperHTML isomorphic importer",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e 'console.assert(typeof require(\"./\").bind === typeof Function)'"
+  },
+  "keywords": [
+    "hyperhtml",
+    "viperhtml",
+    "isomorphic",
+    "dom",
+    "html"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "dependencies": {
+    "hyperhtml": "^2.7.0",
+    "viperhtml": "^2.10.0"
+  }
+}
