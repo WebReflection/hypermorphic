@@ -1,4 +1,4 @@
-# hypermorphic
+# hypermorphic ![build status](https://travis-ci.org/WebReflection/hypermorphic.svg?branch=master)
 
 An isomorphic [hyperHTML](https://viperhtml.js.org/hyper.html) &amp; [viperHTML](https://viperhtml.js.org/viper.html) importer, compatible with bundlers.
 
