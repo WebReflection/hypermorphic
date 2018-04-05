@@ -1,5 +1,7 @@
 # hypermorphic ![build status](https://travis-ci.org/WebReflection/hypermorphic.svg?branch=master)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/WebReflection/hypermorphic.svg)](https://greenkeeper.io/)
+
 An isomorphic [hyperHTML](https://viperhtml.js.org/hyper.html) &amp; [viperHTML](https://viperhtml.js.org/viper.html) importer, compatible with bundlers.
 
 ```js
