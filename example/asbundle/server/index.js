@@ -2,18 +2,17 @@
 
 const {wire} = require('hypermorphic');
 
-const index = (title) => wire()`<!doctype html>
+const index = (title) => wire(process, ':document')`<!doctype html>
 <html>
   <head>
     <title>${title}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script defer src="dist/index.js"></script>
-  </head>
-  ${body()}
+  </head>${body()}
 </html>`;
 
-const body = () => wire()`
+const body = () => wire(process, ':body')`
   <body>
     <main></main>
     <footer>
@@ -26,11 +25,7 @@ const http = require('http');
 const path = require('path');
 const zlib = require('zlib');
 
-const client = zlib.gzipSync(
-  fs.readFileSync(
-    path.join(__dirname, '..', 'dist', 'main.js')
-  )
-);
+const mainJS = path.join(__dirname, '..', 'dist', 'main.js');
 
 http.createServer((req, res) => {
   if (req.url === '/dist/index.js') {
@@ -38,9 +33,14 @@ http.createServer((req, res) => {
       'content-type': 'application/javascript',
       'content-encoding': 'gzip'
     });
-    res.end(client);
+    fs.createReadStream(mainJS).pipe(zlib.createGzip()).pipe(res);
+  } else if (req.url === '/favicon.ico') {
+    res.writeHead(200, {'content-type': 'text/plain'});
+    res.end('');
   } else {
     res.writeHead(200, {'content-type': 'text/html'});
     res.end(index('hypermorphic'));
   }
-}).listen(8080);
+}).listen(8080, function () {
+  console.log(`http://localhost:${this.address().port}/`);
+});

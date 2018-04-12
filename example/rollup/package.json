@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "devDependencies": {
+    "hypermorphic": "^0.1.0",
+    "rollup": "^0.57.1",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "bundle": "rollup --config rollup.config.js",
+    "postinstall": "npm start",
+    "start": "rollup -w --config rollup.config.js & node server/index.js"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "devDependencies": {
+    "asbundle": "^2.6.0",
+    "hypermorphic": "^0.1.0",
+    "uglify-es": "^3.3.9",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "bundle": "asbundle client/index.js --ignore=viperhtml | uglifyjs --comments=/^!/ -c -m > dist/main.js",
+    "postinstall": "npm start",
+    "start": "npm run watch & node server/index.js",
+    "watch": "watch 'npm run bundle' ./client"
+  }
+}

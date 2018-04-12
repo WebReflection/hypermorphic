@@ -12,10 +12,10 @@ import {bind, wire} from 'hypermorphic';
 const {bind, wire} = require('hypermorphic');
 ```
 
-### Example
+### Examples
 
 You can clone this repository, enter in the `example` folder,
-type `npm install` followed by `npm run bundle` and `npm start`.
+pick one of the solutions and then run `npm install`.
 
-After reaching `http://localhost:8080/` you'll see a page
-powered by hyperHTML on the client and viperHTML on the server.
+You can reach `http://localhost:8080/` to see a page
+powered by _hyperHTML_ on the client and _viperHTML_ on the server.

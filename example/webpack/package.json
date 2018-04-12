@@ -7,6 +7,8 @@
   },
   "scripts": {
     "bundle": "webpack",
-    "start": "node server/index.js"
+    "postinstall": "npm start",
+    "start": "npm run watch & node server/index.js",
+    "watch": "webpack --watch --info-verbosity verbose ./client"
   }
 }
