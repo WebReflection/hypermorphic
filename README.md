@@ -12,6 +12,10 @@ import {bind, wire} from 'hypermorphic';
 const {bind, wire} = require('hypermorphic');
 ```
 
+### Bundlers
+
+Please have a look at the [example](https://github.com/WebReflection/hypermorphic/tree/master/example) folder to find out how to configure your favorite bundler to load _hyperHTML_ on the client side, fully ignoring _viperHTML_.
+
 ### Examples
 
 You can clone this repository, enter in the `example` folder,
