@@ -1,6 +1,6 @@
 {
   "name": "hypermorphic",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "An isomorphic hyperHTML & viperHTML importer, compatible with bundlers",
   "main": "index.js",
   "scripts": {
