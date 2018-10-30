@@ -16,8 +16,8 @@
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "dependencies": {
-    "hyperhtml": "^2.13.0",
-    "viperhtml": "^2.16.0"
+    "hyperhtml": "^2.15.2",
+    "viperhtml": "^2.17.0"
   },
   "devDependencies": {},
   "repository": {
